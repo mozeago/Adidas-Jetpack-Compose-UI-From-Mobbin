@@ -2,4 +2,7 @@
  UI inspiration ![UI inspiration](adidas_android.png)  
 
    
- The Jetpack Compose UI I did ![The Jetpack Compose UI I did](ui_to_code_adidas_android.png)
+ The Jetpack Compose UI I did  
+   
+     
+  ![The Jetpack Compose UI I did](ui_to_code_adidas_android.png)
