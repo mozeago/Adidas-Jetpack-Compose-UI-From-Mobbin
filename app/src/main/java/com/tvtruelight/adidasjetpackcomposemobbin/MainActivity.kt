@@ -3,12 +3,18 @@ package com.tvtruelight.adidasjetpackcomposemobbin
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
+import com.tvtruelight.adidasjetpackcomposemobbin.ui.navigation.BottomAppNavigation
+import com.tvtruelight.adidasjetpackcomposemobbin.ui.navigation.TopAppBarScreen
+import com.tvtruelight.adidasjetpackcomposemobbin.ui.screens.ShoeCollectionScreen
 import com.tvtruelight.adidasjetpackcomposemobbin.ui.theme.AdidasJetpackComposeMobbinTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,13 +25,17 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Scaffold(
                     bottomBar = {
-                        Text(text = "Bottom")
+                        BottomAppNavigation(
+                            modifier = Modifier
+                                .background(MaterialTheme.colorScheme.surfaceContainerLowest)
+                                .padding(5.dp)
+                        )
                     },
                     topBar = {
-                        Text(text = "Top Bar")
+                        TopAppBarScreen()
                     }
                 ) { innerPadding ->
-                    Greeting(name = "Moses", modifier = Modifier.padding(innerPadding))
+                    ShoeCollectionScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }

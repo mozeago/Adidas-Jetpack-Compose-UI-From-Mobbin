@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Adidas Jetpack Compose Mobbin</string>
+    <string name="navigation_home">home</string>
+    <string name="navigation_favorites">favorites</string>
+    <string name="navigation_search">search</string>
+    <string name="navigation_shop">shop</string>
+    <string name="shoes_women">women</string>
+    <string name="shoes">shoes</string>
+    <string name="gazelle_bold_shoes">gazelle bold shoes</string>
+    <string name="best_seller">best seller</string>
 </resources>
